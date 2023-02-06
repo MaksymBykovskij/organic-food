@@ -262,7 +262,6 @@ body {
     line-height: 30px;
     text-align: center;
     width: 91px;
-
 }
 
 .users {
@@ -285,5 +284,174 @@ body {
     background-repeat: no-repeat;
     background-position: left 33px center;
 }
-
 /* ------------------- END HERO STYLE -------------------- */
+
+/* ==================== Section Service ====================== */
+.service {
+    padding: 141px 0px 166px 0px;
+}
+
+.service-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.service-content {
+    width: 671px;
+    padding-bottom: 32px;
+    position: relative;
+}
+
+.service-title {
+    margin-bottom: 20px;
+}
+
+.service-text {
+    margin-bottom: 16px;
+}
+
+.service-item {
+    width: 500px;
+    background: var(--bg-white);
+    position: relative;
+    padding: 40px 59px 40px 163px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.service-item:hover {
+    background: var(--bg-mint-cream);
+}
+
+.service-item::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: var(--bg-mint-cream);
+    top: 50%;
+    left: 59px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.service-item:hover::before {
+    background: var(--bg-white);
+}
+
+.icon-delivery {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/service-icon/delivery-man.svg) no-repeat center;
+    position: absolute;
+    top: 50%;
+    left: 79px;
+    transform: translateY(-50%);
+}
+
+.icon-order {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/service-icon/shopping.svg) no-repeat center;
+    position: absolute;
+    top: 50%;
+    left: 79px;
+    transform: translateY(-50%);
+}
+
+.icon-time {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/service-icon/fast-time.svg) no-repeat center;
+    position: absolute;
+    top: 50%;
+    left: 79px;
+    transform: translateY(-50%);
+}
+
+.service-item-title {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.service-item-text {
+    display: block;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--color-second);
+}
+
+.service-link {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 34px;
+    background: url(../images/arrow-down.svg) no-repeat center;
+    bottom: 0;
+    left: 35%;
+    animation: move 2s linear infinite;
+}
+
+.service-img {
+    width: 569px;
+    height: 569px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/elips-fruit.png), url(../images/Ellipse-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom 76px center, right 0 center;
+    background-size: 398px, content;
+}
+
+.service-img figure {
+    width: 354px;
+    animation: moveImg 2s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 10px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes moveImg {
+    0% {
+        transform: translateY(0);
+        -webkit-transform:  translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+        -webkit-transform:  translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+        -webkit-transform:  translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+/* ------------------end service --------------------- */
