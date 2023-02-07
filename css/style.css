@@ -14,6 +14,7 @@ font-family: 'Rosario', sans-serif; */
     --color-black: #000000;
     --color-white: #ffffff;
     --btn-border: #CCCCCC;
+    --color-dark: #333333;
 
     /*==============================  Background ============================== */
     --bg-mint-cream: #F3FBF8;
@@ -619,3 +620,100 @@ body {
     background: url(../images/vector-right-active.svg) no-repeat center;
 }
 /* ----------------------------- Customers end ------------------------------- */
+
+/* ======================== App style ================ */
+.app {
+    padding-bottom: 140px;
+}
+
+.app-wrapper {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.app-img {
+    width: 265px;
+    animation: moveImg 2s linear infinite;
+    -webkit-animation: moveImg 2s linear infinite;
+}
+
+.app-content {
+    width: 653px;
+}
+
+.app-subtitle {
+    display: block;
+    width: 170px;
+    padding: 11px 0;
+    text-align: center;
+    background: var(--bg-mint-cream);
+    border-radius: 50px;
+    color: var(--color-dark);
+    margin-bottom: 27px;
+}
+
+.app-text {
+    width: 574px;
+    margin: 20px 0 50px 0;
+}
+
+.app-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.app-link {
+    width: 104px;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+    padding: 5px 0;
+    color: var(--color-white);
+    display: block;
+    transition: 0.3s linear;
+}
+
+.app-link:hover {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.35);
+    transform: skew(10deg, 0deg);
+}
+
+.app-store {
+    background: var(--color-black) url(../images/aple.svg) no-repeat left 12px center ;
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 34px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+.app-store span {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 7px;
+    line-height: 7px;
+    letter-spacing: 0.7px;
+}
+
+.google-play {
+    background: var(--color-black) url(../images/google.svg) no-repeat left 8px center ;
+    font-size: 11px;
+    line-height: 11px;
+    padding-left: 32px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+.google-play span {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 7px;
+    line-height: 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+/* ---------------------- end app style ----------------- */
